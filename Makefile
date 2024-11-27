@@ -1,8 +1,8 @@
 nuke-run: submodules images generate-keys nuke run
 
 nuke:
-	cd gateway && make nuke
 	cd frontend && docker compose down -v
+	cd gateway && make nuke
 
 run:
 	cd gateway && make run
