@@ -22,5 +22,15 @@ images:
 	cd gateway && make update-containers
 	cd frontend && docker compose pull
 
+down:
+	cd gateway && make down
+	cd frontend && docker compose down
+
+redeploy: down run
+
+update: submodules images
+
+upgrade: update redeploy
+
 generate-keys:
 	cd gateway && make generate-keys-docker
