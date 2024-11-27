@@ -1,0 +1,6 @@
+[submodule "gateway"]
+	path = gateway
+	url = https://github.com/Pokedex-gamba/gateway.git
+[submodule "frontend"]
+	path = frontend
+	url = https://github.com/Pokedex-gamba/frontend.git
